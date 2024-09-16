@@ -1,0 +1,90 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>网站标题</title>  
+  <link rel="stylesheet" href="styles.css"> 
+  <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+  <!--鼠标特效文字开始-->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script type="text/javascript">
+      //定义获取词语下标
+      var a_idx = 0;
+      jQuery(document).ready(function($) {
+          //点击body时触发事件
+          $("body").click(function(e) {
+          //需要显示的词语
+          var a = new Array("这里是点击文字");
+          //设置词语给span标签
+          var $i = $("<span/>").text(a[a_idx]);
+          //下标等于原来下标+1  余 词语总数
+          a_idx = (a_idx + 1)% a.length;
+          //获取鼠标指针的位置，分别相对于文档的左和右边缘。
+          //获取x和y的指针坐标
+          var x = e.pageX, y = e.pageY;
+          //在鼠标的指针的位置给$i定义的span标签添加css样式
+          $i.css({"z-index" : 999999999999999999999999999999999999999999999999999999999999999999999,
+              "top" : y - 20,
+              "left" : x,
+              "position" : "absolute",
+              "font-weight" : "bold",
+              "color" : "#ff6651"
+              });
+          //在body添加这个标签
+          $("body").append($i);
+              //animate() 方法执行 CSS 属性集的自定义动画。
+              $i.animate({
+              //将原来的位置向上移动280
+                  "top" : y - 180,
+                      "opacity" : 0
+               //1500动画的速度
+              }, 700, function() {
+              //时间到了自动删除
+                  $i.remove();
+              });
+          });
+      })
+          ;
+      </script> 
+</head>  
+<body>  
+  <header>  
+    <h1 class="center">欢迎来到xxx的赛博灵堂</h1> 
+    <!--↑网站里面的正文大标题-->
+    <audio src="music.mp3" controls autoplay loop></audio>
+    //↑阴乐播放，自选
+    <h1 class+"center">↑请先播放美妙的阴乐↑</h1> //写成这样的都会解析成大标题，居中的
+    <p>为什么要花时间，</p> //这样的是正文，每一个标签代表一行，不然都会挤在同一行
+    <p>来给一个乐子人一个灵堂呢？</p>
+    <h1 class="center">因为xxx</h1>
+    <h1 class="center">简要介绍↓</h1>
+    <p>介绍内容</p>
+    <p>xxx雅照</p>
+    <img src="0.jpg" style="zoom:20%;" /> //引用和index同一目录下放置的图片
+    <img src="1.jpg" style="zoom:20%" />
+  </header> 
+  <main>  
+    <section class="center">  //定义文字在中间
+      <h1>xxx</h1>
+      <h1>xxx</h1>
+      <p>这里自己发挥</p>
+        <!--<p></p>-->
+        
+  <p>&nbsp;</p>
+      <h2>说了这么多，也该好好的介绍介绍它了</h2>
+      <p>同样自己发挥</p>
+      <h2>xxx</h2>
+      <img src="2.jpg" style="zoom:20%;" /> //图片插入自选
+      <img src="3.jpg" style="zoom:20%;" />
+      <h2>xxx</h2> //仍然是那个红色标题
+      <p>xxx</p> //如果是多行文字就应该这样
+      <p>yyy</p>
+      <p>zzz</p>
+</section>  
+  </main>  
+    
+  <footer>
+    <h3 style="text-align:center;color:red">这里是页脚文字，可以不加</h3>
+</html>

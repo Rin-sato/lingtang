@@ -1,0 +1,111 @@
+/* 基本样式 */  
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+  }  
+    
+  /* 头部样式 */  
+  header {  
+    background-color: #ff030300;  
+    padding: 20px;  
+    text-align: center;  
+  }  
+    
+  /* 导航栏样式 */  
+  nav ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #050101;  
+  }  
+    
+  nav ul li {  
+    display: inline-block;  
+  }  
+    
+  nav ul li a {  
+    color: #ff0d0d;  
+    text-decoration: none;  
+    padding: 10px 20px;  
+  }  
+    
+  nav ul li a:hover {  
+    background-color: #fc0505;  
+  }  
+    
+  /* 主内容样式 */  
+  main {  
+    padding: 20px;  
+  }  
+    
+  section.center {  
+    text-align: center; /* 使文章内容居中 */  
+  }  
+    
+  h2 {  
+    color: #333;  
+  }  
+    
+  /* 页脚样式 */  
+  footer {  
+    background-color: #ff0000;  
+    padding: 10px;  
+    text-align: center;  
+  }
+  li{
+    display: inline-block;  
+    border-radius: 4px;  
+    background-color: #ff0000;  
+    border: none;  
+    color: #ff0000;  
+    text-align: center;  
+    font-size: 23px;  
+    padding: 10px;  
+    width: 200px;  
+    transition: all 0.5s;  
+    cursor: pointer;  
+    margin: 5px;  
+
+
+  }
+ 
+  /* 标题样式 */  
+h1 {  
+  font-family: Arial, sans-serif; /* 字体 */  
+  font-size: 32px;               /* 字体大小 */  
+  color: #ff0000;                   /* 字体颜色 */  
+  text-align: center;            /* 文本对齐方式 */  
+  text-transform: uppercase;    /* 文本转换（全部大写） */  
+  letter-spacing: 1px;           /* 字母间距 */  
+  background-color: #f2f2f2;     /* 背景颜色 */  
+  padding: 10px;                 /* 内边距 */  
+  border-bottom: 1px solid #ccc;/* 下边框 */  
+}  
+  
+/* 标题样式 */  
+h2 {  
+  font-family: Arial, sans-serif; /* 字体 */  
+  font-size: 32px;               /* 字体大小 */  
+  color: #ff0000;                   /* 字体颜色 */  
+  text-align: center;            /* 文本对齐方式 */  
+  text-transform: uppercase;    /* 文本转换（全部大写） */  
+  letter-spacing: 1px;           /* 字母间距 */  
+  background-color: #f2f2f2;     /* 背景颜色 */  
+  padding: 10px;                 /* 内边距 */  
+  border-bottom: 1px solid #ccc;/* 下边框 */  
+}  
+  
+/* 标题样式 */  
+h3 {  
+  font-family: Arial, sans-serif; /* 字体 */  
+  font-size: 32px;               /* 字体大小 */  
+  color: #ff0000;                   /* 字体颜色 */  
+  text-align: center;            /* 文本对齐方式 */  
+  text-transform: uppercase;    /* 文本转换（全部大写） */  
+  letter-spacing: 1px;           /* 字母间距 */  
+  background-color: #f2f2f2;     /* 背景颜色 */  
+  padding: 10px;                 /* 内边距 */  
+  border-bottom: 1px solid #ccc;/* 下边框 */  
+}  
+  /* 标题样式 */  
