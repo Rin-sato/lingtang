@@ -95,3 +95,19 @@
   <footer>
     <h3 style="text-align:center;color:red">这里是页脚文字，可以不加</h3>
 </html>
+<body>
+  <h1>发表评论</h1>
+  <form id="commentForm">
+    <label for="username">用户名:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="content">评论内容:</label>
+    <textarea id="content" name="content" required></textarea>
+    
+    <button type="submit">提交评论</button>
+  </form>
+
+  <div id="comments"></div>
+
+  <script src="comments.js"></script>
+</body>
