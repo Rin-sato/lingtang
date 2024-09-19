@@ -95,12 +95,14 @@
 <div id="comments-container">
   <!-- 这里将动态插入评论 -->
 </div>
-  <h1>发表评论</h1>
+<h1>发表评论</h1>
   <form id="commentForm">
     <label for="username">用户名:</label>
-    <input type="text" id="username" name="user"">
+    <input type="text" id="username" name="username" required />
+
     <label for="content">评论内容:</label>
-    <textarea id="content" name="content"></textarea>
+    <textarea id="content" name="content" required></textarea>
+
     <button type="submit">提交评论</button>
   </form>
 
